@@ -15,8 +15,8 @@ use casper_contract::{
     unwrap_or_revert::UnwrapOrRevert,
 };
 use casper_types::{ApiError, Key};
+use contract::KEY_NAME;
 
-const KEY_NAME: &str = "my-key-name";
 const RUNTIME_ARG_NAME: &str = "message";
 
 /// An error enum which can be converted to a `u16` so it can be returned as an `ApiError::User`.
