@@ -15,3 +15,7 @@ name = "integration-tests"
 path = "src/integration_tests.rs"
 bench = false
 doctest = false
+
+[features]
+default = ["std"]
+std = ["casper-contract/std"]
